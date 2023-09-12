@@ -1,0 +1,56 @@
+<!-- MOBILE vers-->
+<div class="bg-white text-[#36384e] mt-40 lg:hidden">
+  <div class="container px-6">
+    <div class="flex flex-col gap-4">
+      <svg
+    class="w-[20%]"
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 21 21"
+  >
+    <g fill="none">
+      <circle cx="10.5" cy="10.5" r="10.5" fill="#FF6155" />
+      <path stroke="#FFF" stroke-width="2" d="M6 11.381 8.735 14 15 8" />
+    </g>
+  </svg>
+  <h1 class="text-5xl font-bold my-6">Thanks for subscribing!</h1>
+  <p class="font-[400] text-[16px]">
+    A confirmation email has been sent to <span class="font-bold">{{email?email:'vide'}}</span> .
+    Please open it and click the button inside to confirm your subscription.
+  </p>
+  <button class="mt-[80px] bg-[#242742] hover:bg-gradient-to-r hover:from-pink-500 hover:to-orange-500
+  w-full hover:shadow-2xl hover:shadow-Tomato-0 cursor-pointer p-4 rounded-xl
+  text-white font-bold" (click)="main()">Dismiss message</button>
+    </div>
+
+  </div>
+
+</div>
+<!--end MOBILE vers-->
+
+<div class="hidden lg:bg-[#242742] lg:h-screen text-[#36384e] lg:overflow-hidden
+lg:grid lg:place-content-center lg:place-items-center">
+
+  <div class="container p-2 lg:grid lg:place-content-center lg:place-items-center">
+    <div class="lg:bg-white lg:rounded-3xl lg:flex lg:flex-col p-10 w-[60%]">
+      <svg
+    class="lg:w-[15%]"
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 21 21"
+  >
+    <g fill="none">
+      <circle cx="10.5" cy="10.5" r="10.5" fill="#FF6155" />
+      <path stroke="#FFF" stroke-width="2" d="M6 11.381 8.735 14 15 8" />
+    </g>
+  </svg>
+  <h1 class="lg:text-5xl lg:font-bold lg:my-6">Thanks for subscribing!</h1>
+  <p class="lg:font-[400] lg:text-[16px]">
+    A confirmation email has been sent to <br> <span class="font-bold">{{email?email:'vide'}}</span> .
+    Please open it and click the button inside to confirm your subscription.
+  </p>
+  <button class="lg:mt-[80px] lg:bg-[#242742] lg:hover:bg-gradient-to-r lg:hover:from-pink-500 lg:hover:to-orange-500
+  lg:w-full lg:hover:shadow-2xl lg:hover:shadow-Tomato-0 lg:cursor-pointer lg:p-4 lg:rounded-xl
+  lg:text-white lg:font-bold" (click)="main()">Dismiss message</button>
+    </div>
+  </div>
+
+</div>

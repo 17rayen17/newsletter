@@ -1,0 +1,199 @@
+<div
+  class="bg-white text-[#36384e] lg:hidden"
+>
+  <!-- card-->
+  <div class="container ">
+    <div
+      class="flex flex-col-reverse items-center "
+    >
+      <div class="px-2">
+        <h1 class="text-6xl font-bold my-6">Stay updated!</h1>
+        <p class="font-[500] text-[16px] mt-4 mb-8">
+          Join 60,000+ product managers receiving monthly <br> updates on:
+        </p>
+        <!-- List -->
+        <div class="flex flex-col gap-3">
+          <div class="flex gap-3">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="21"
+              height="21"
+              viewBox="0 0 21 21"
+            >
+              <g fill="none">
+                <circle cx="10.5" cy="10.5" r="10.5" fill="#FF6155" />
+                <path
+                  stroke="#FFF"
+                  stroke-width="2"
+                  d="M6 11.381 8.735 14 15 8"
+                />
+              </g>
+            </svg>
+            <p class="font-[500]">
+              Product discovery and building what matters
+            </p>
+          </div>
+          <div class="flex gap-3">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="21"
+              height="21"
+              viewBox="0 0 21 21"
+            >
+              <g fill="none">
+                <circle cx="10.5" cy="10.5" r="10.5" fill="#FF6155" />
+                <path
+                  stroke="#FFF"
+                  stroke-width="2"
+                  d="M6 11.381 8.735 14 15 8"
+                />
+              </g>
+            </svg>
+            <p class="font-[500]">Measuring to ensure updates are a success</p>
+          </div>
+          <div class="flex gap-3">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="21"
+              height="21"
+              viewBox="0 0 21 21"
+            >
+              <g fill="none">
+                <circle cx="10.5" cy="10.5" r="10.5" fill="#FF6155" />
+                <path
+                  stroke="#FFF"
+                  stroke-width="2"
+                  d="M6 11.381 8.735 14 15 8"
+                />
+              </g>
+            </svg>
+            <p class="font-[500]">And much more!</p>
+          </div>
+        </div>
+        <!-- end List -->
+        <form class="flex flex-col mt-9 mb-4" [formGroup]="form">
+          <div class="flex justify-between">
+            <label for="mail" class="font-[500] mb-2">Email adress</label>
+            <span class="text-red-500 font-bold" *ngIf="form.get('email')?.invalid && form.get('email')?.touched">Valid email required</span>
+          </div>
+          <input
+            type="email"
+            placeholder="email@company.com"
+            class="border rounded-lg p-3 font-bold"
+            formControlName="email"
+            [ngClass]="{'border-red-500 border-[2px]': form.get('email')?.invalid}"
+          />
+        </form>
+        <button
+          class="bg-[#242742] hover:bg-gradient-to-r hover:from-pink-500 hover:to-orange-500
+          w-full hover:shadow-2xl hover:shadow-Tomato-0 cursor-pointer p-4 rounded-xl
+          text-white font-bold mb-7"
+          (click)="desk()"
+        >
+          Subscribe to monthly newsletter
+        </button>
+      </div>
+      <img class="w-full lg:hidden" src="../assets/illustration-sign-up-mobile.svg" alt="">
+      </div>
+  </div>
+  <!-- end card-->
+</div>
+<!--end Mobile vers-->
+
+<!-- Desktop vers-->
+<div class="hidden lg:bg-[#242742] lg:text-[#36384e] lg:h-screen lg:overflow-hidden
+lg:grid lg:place-content-center lg:place-items-center">
+
+<div class="container">
+  <div class="lg:bg-white lg:rounded-3xl lg:flex lg:gap-8 lg:items-center lg:p-4">
+    <div class="px-9">
+      <h1 class="text-6xl font-bold my-6">Stay updated!</h1>
+        <p class="font-[500] text-[16px] mt-4 mb-8">
+          Join 60,000+ product managers receiving monthly <br> updates on:
+        </p>
+        <!-- List -->
+        <div class="flex flex-col gap-3">
+          <div class="flex gap-3">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="21"
+              height="21"
+              viewBox="0 0 21 21"
+            >
+              <g fill="none">
+                <circle cx="10.5" cy="10.5" r="10.5" fill="#FF6155" />
+                <path
+                  stroke="#FFF"
+                  stroke-width="2"
+                  d="M6 11.381 8.735 14 15 8"
+                />
+              </g>
+            </svg>
+            <p class="font-[500]">
+              Product discovery and building what matters
+            </p>
+          </div>
+          <div class="flex gap-3">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="21"
+              height="21"
+              viewBox="0 0 21 21"
+            >
+              <g fill="none">
+                <circle cx="10.5" cy="10.5" r="10.5" fill="#FF6155" />
+                <path
+                  stroke="#FFF"
+                  stroke-width="2"
+                  d="M6 11.381 8.735 14 15 8"
+                />
+              </g>
+            </svg>
+            <p class="font-[500]">Measuring to ensure updates are a success</p>
+          </div>
+          <div class="flex gap-3">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="21"
+              height="21"
+              viewBox="0 0 21 21"
+            >
+              <g fill="none">
+                <circle cx="10.5" cy="10.5" r="10.5" fill="#FF6155" />
+                <path
+                  stroke="#FFF"
+                  stroke-width="2"
+                  d="M6 11.381 8.735 14 15 8"
+                />
+              </g>
+            </svg>
+            <p class="font-[500]">And much more!</p>
+          </div>
+        </div>
+        <!-- end List -->
+        <form class="flex flex-col mt-9 mb-4" [formGroup]="form">
+          <div class="flex justify-between">
+            <label for="mail" class="font-[500] mb-2">Email adress</label>
+            <span class="text-red-500 font-bold" *ngIf="form.get('email')?.invalid && form.get('email')?.touched">Valid email required</span>
+          </div>
+          <input
+            type="email"
+            placeholder="email@company.com"
+            class="border rounded-lg p-3 font-bold"
+            formControlName="email"
+            [ngClass]="{'border-red-500 border-[2px]': form.get('email')?.invalid}"
+          />
+        </form>
+        <button
+          class="bg-[#242742] hover:bg-gradient-to-r hover:from-pink-500 hover:to-orange-500
+          w-full hover:shadow-2xl hover:shadow-Tomato-0 cursor-pointer p-4 rounded-xl
+          text-white font-bold mb-7"
+          type="submit" (click)="desk()"
+        >
+          Subscribe to monthly newsletter
+        </button>
+    </div>
+    <img src="../assets/illustration-sign-up-desktop.svg" alt="">
+  </div>
+</div>
+</div>
